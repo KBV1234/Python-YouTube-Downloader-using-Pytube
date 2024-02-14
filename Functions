@@ -1,0 +1,13 @@
+# Create an instance of tkinter frame or window
+window=Tk()
+# Set the size of the tkinter window
+window.geometry("700x350")
+window.title("PythonGeeks")#give title to the window
+Label(window, text="YOUTUBE VIDEO DOWNLOADER",bg='grey', font=('Calibri 15')).pack()# a label
+Label(window, text="Enter the link to download", font=('Calibri 12')).pack()# a label
+Entry(window,textvariable=text,width=50).pack()#entry field
+Checkbutton(text='360p',onvalue=18, offvalue=0,variable=res1).pack()#creating checkbox
+Checkbutton(text='720p',onvalue=22, offvalue=0,variable=res2).pack()#creating checkbox
+Checkbutton(text='1080p',onvalue=37, offvalue=0,variable=res3).pack()#creating checkbox
+#creating a button
+Button(window,text="Download",bg='green',command=downloader).pack()
